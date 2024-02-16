@@ -5,7 +5,7 @@ RUN useradd --create-home peertube-runner
 COPY install-packages.sh .
 RUN ./install-packages.sh
 
-RUN npm install -g @peertube/peertube-runner
+RUN npm install -g @peertube/peertube-runner@0.0.10
 
 USER peertube-runner
 WORKDIR /home/peertube-runner
